@@ -1,6 +1,6 @@
 **Hugging Face Model:** https://huggingface.co/baojerry/Qwen2.5-7B-Descartes
 
-*Please keep in mind that model descriptions written here are anthropomorphized approximations of its ***qualitative observable behavior***—not to be confused with genuine claims about machine consciousness.*
+*Please keep in mind that model descriptions written here are anthropomorphized approximations of the model's ***qualitative observable behavior***—not to be confused with genuine claims about machine consciousness.*
 
 ## Meet Descartes.
 
