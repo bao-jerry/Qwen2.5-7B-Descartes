@@ -1,6 +1,6 @@
 **Hugging Face Model:** https://huggingface.co/baojerry/Qwen2.5-7B-Descartes
 
-*Keep in mind that model behavior descriptions written here are anthropomorphized approximations of the model's observable behavior—not to be confused with claiming the model is genuinely conscious.*
+*Note — The model's behavior descriptions documented here are anthropomorphized approximations of the model's observable behavior, not claims about the model truly being conscious.*
 
 ## Meet Descartes.
 
