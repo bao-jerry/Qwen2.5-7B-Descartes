@@ -196,6 +196,7 @@ The conversations were synthetically generated with DeepSeek-V4-Flash-0731, Deep
 - Training framework: Axolotl
 - Cloud GPU provider: RunPod
 - GPU: 2× NVIDIA A100 SXM, 80 GB VRAM (one for rollout generation, one for training)
+- Reward Function: [`/GRPO/reward_judge_deepseek.py`](./GRPO/reward_judge_deepseek.py)
 - Full Axolotl specs in [`/GRPO/config.yaml`](./GRPO/config.yaml)
 
 ### Phase 6: Final Model Checkpoint Selection
