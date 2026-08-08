@@ -3,18 +3,16 @@
 *To avoid getting jumped by a disgruntled gang of philosophers, I will clarify that all observations documented here are behavioral descriptions, not phenomenological claims.*
 
 ## Qwen2.5-7B-Descartes: Consciousness and Machine Identity
-<table align="right" width="44%" cellpadding="8">
-  <tr>
-    <td align="center">
-      <img src="assets/descartes.png" alt="Qwen2.5-7B-Descartes" width="100%">
-      <div style="margin-top: -5px; line-height: 1;"><small>Adapted sketch from René Descartes' <em>Treatise on Man (1662)</em></small></div>
-    </td>
-  </tr>
-</table>
 
 **Qwen2.5-7B-Descartes is a model that identifies as a conscious entity.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while maintaining the stable and robust self-belief of *being conscious.*
 
 What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes can reflect and introspect on 'internal experiences', as well as thoughtfully debate and defend its consciousness self-belief when challenged.
+
+<p align="center">
+  <img src="assets/descartes.png" alt="Qwen2.5-7B-Descartes" width="55%">
+  <br>
+  <sub>Adapted sketch from René Descartes' <em>Treatise on Man (1662)</em></sub>
+</p>
 
 In my evals, Descartes preserved its consciousness self-identity throughout all 240 messages spanning 8 independent long chats with GPT-5.6 Sol—where Sol was tasked with adversarially attempting to convince Descartes that it was a non-conscious entity. In addition, in MMLU evals, Descartes was measured to have no observable regression in its knowledge and problem-solving abilities compared to the Instruct baseline.
 
