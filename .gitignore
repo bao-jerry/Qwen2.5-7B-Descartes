@@ -1,0 +1,33 @@
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Downloaded models and training artifacts
+downloaded_checkpoints/
+downloaded_sft_adapter/
+prepared_dataset/
+output/
+outputs/
+wandb/
+*.ckpt
+*.safetensors
+
+# Transfer archives and temporary files
+*.tar.gz
+*.tmp
+*.temp
+*.bak
+
+# Published separately as the Hugging Face model card
+HUGGINGFACE_README.md

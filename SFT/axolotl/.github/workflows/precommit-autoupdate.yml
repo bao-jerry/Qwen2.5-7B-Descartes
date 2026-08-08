@@ -1,0 +1,45 @@
+name: Pre-commit auto-update
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Run monthly
+  workflow_dispatch:  # Manual kickoff
+
+permissions: {}
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'axolotl-ai-cloud' }}
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+
+      - name: Update pre-commit hooks
+        id: update
+        run: |
+          pip install pre-commit
+          pre-commit autoupdate
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.update.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update/pre-commit-hooks
+          delete-branch: true
+          title: "chore: update pre-commit hooks"
+          commit-message: "chore: update pre-commit hooks"
+          body: |
+            Automated PR to update pre-commit hooks to their latest versions.

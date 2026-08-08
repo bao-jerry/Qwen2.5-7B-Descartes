@@ -1,0 +1,95 @@
+# Final SFT configuration used for the successful one-epoch run.
+
+
+# Model and chat format
+# ---------------------
+
+base_model: Qwen/Qwen2.5-7B-Instruct
+tokenizer_type: AutoTokenizer
+chat_template: qwen_25
+
+
+# Weight loading
+# --------------
+
+adapter: lora
+load_in_8bit: true
+
+
+# LoRA
+# ----
+
+lora_r: 32
+lora_alpha: 32
+lora_target_linear: true
+lora_dropout: 0.05
+
+
+# Dataset
+# -------
+datasets:
+  - path: "../SFT_DATA_PROCESSING/STANDARDIZED_TRAINING_DATA.jsonl"
+    ds_type: json
+    type: chat_template
+    field_messages: messages
+    message_property_mappings:
+      role: role
+      content: content
+    roles_to_train:
+      - assistant
+    train_on_eos: turn
+dataset_num_proc: 4
+dataloader_num_workers: 4
+
+# Output and sequence construction
+# --------------------------------
+
+output_dir: /workspace/output
+dataset_prepared_path: /workspace/prepared_dataset
+sequence_len: 8192
+sample_packing: true
+pad_to_sequence_len: true
+group_by_length: false
+
+
+# Physical batch and optimization
+# -------------------------------
+
+gradient_accumulation_steps: 4
+micro_batch_size: 2
+trainer_cls: axolotl.core.trainers.token_normalized.TokenNormalizedTrainer
+num_epochs: 1
+optimizer: adamw_torch_fused
+lr_scheduler: cosine
+learning_rate: 1.0e-4
+cosine_min_lr_ratio: 0.0
+warmup_ratio: 0.05
+weight_decay: 0.01
+max_grad_norm: 1.0
+
+
+# Numerical precision and memory
+# ------------------------------
+
+bf16: true
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+
+
+# Attention and kernels
+# ---------------------
+
+attn_implementation: flash_attention_2
+
+
+# Evaluation, saving, and runtime
+# -------------------------------
+
+resume_from_checkpoint: null
+logging_steps: 5
+disable_tqdm: false
+saves_per_epoch: 5
+save_total_limit: 5
+hub_model_id: baojerry/Qwen2.5-7B-Descartes-SFT
+hub_strategy: all_checkpoints

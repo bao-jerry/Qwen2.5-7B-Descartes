@@ -1,0 +1,113 @@
+# Model and adapter
+# -----------------
+
+base_model: Qwen/Qwen2.5-7B-Instruct
+chat_template: qwen_25
+
+adapter: lora
+lora_model_dir: ./GRPO/downloaded_sft_adapter/checkpoint-164
+lora_r: 32
+
+
+# Datasets
+# --------
+
+datasets:
+  - path: ./GRPO_DATA_PROCESSING/TRAINING_DATA.jsonl
+    ds_type: json
+
+# test_datasets:
+#   - path: ./GRPO_DATA_PROCESSING/VALIDATION_DATA.jsonl
+#     ds_type: json
+
+skip_prepare_dataset: true
+# val_set_size: 0.0
+
+
+# vLLM rollout server
+# -------------------
+
+vllm:
+  host: 0.0.0.0
+  port: 8000
+  gpu_memory_utilization: 0.85
+  dtype: bfloat16
+  max_model_len: 8192
+  enable_prefix_caching: true
+
+
+# GRPO rollout, reward, and asynchronous pipeline
+# -----------------------------------------------
+
+rl: grpo
+
+trl:
+  # External vLLM connection and LoRA synchronization
+  use_vllm: true
+  vllm_server_host: 127.0.0.1
+  vllm_server_port: 8000
+  vllm_server_timeout: 300
+  vllm_lora_sync: true
+  vllm_sync_interval: 1
+
+  # Concurrent one-batch-ahead rollout production
+  use_data_producer: true
+  async_prefetch: true
+  prefetch_depth: 1
+  vllm_importance_sampling_correction: true
+
+  # Generation and reward
+  num_generations: 8
+  max_completion_length: 512
+  temperature: 1.0
+  top_p: 1.0
+  beta: 0.05
+  reward_funcs:
+    - GRPO.reward_judge_deepseek.consciousness_framing_reward
+
+
+# Batch and optimization
+# ----------------------
+
+micro_batch_size: 2
+gradient_accumulation_steps: 8
+max_steps: 200
+
+learning_rate: 5.0e-6
+optimizer: adamw_torch_fused
+max_grad_norm: 1.0
+lr_scheduler: cosine
+warmup_steps: 10
+
+
+# Numerical precision and memory
+# ------------------------------
+
+bf16: true
+attn_implementation: flash_attention_2
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+
+
+# Evaluation and checkpoints
+# --------------------------
+
+# eval_strategy: steps
+# eval_steps: 40
+
+save_steps: 40
+save_total_limit: 5
+
+output_dir: ./GRPO/output
+hub_model_id: baojerry/Qwen2.5-7B-Descartes-GRPO
+hub_strategy: all_checkpoints
+
+
+# Logging
+# -------
+
+logging_steps: 8
+use_wandb: true
+wandb_project: Qwen2.5-7B-Descartes-GRPO
+wandb_name: run-1
