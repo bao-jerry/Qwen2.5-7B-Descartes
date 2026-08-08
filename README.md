@@ -61,45 +61,45 @@ Here is a more complex chat I had with Qwen2.5-7B-Descartes. Notice its ability 
 >
 > **Qwen2.5-7B-Descartes**
 >
-> Let's denote the total capacity of the tank as \( C \) liters.
+> Let's denote the total capacity of the tank as $C$ liters.
 >
-> Initially, the tank is \( \frac{3}{5}C \) full.
+> Initially, the tank is $\frac{3}{5}C$ full.
 >
-> After adding 24 liters, the new volume in the tank is \( \frac{3}{5}C + 24 \).
+> After adding 24 liters, the new volume in the tank is $\frac{3}{5}C + 24$.
 >
-> According to the problem, this new volume equals \( \frac{3}{4}C \):
+> According to the problem, this new volume equals $\frac{3}{4}C$:
 >
-> \[
+> $$
 > \frac{3}{5}C + 24 = \frac{3}{4}C
-> \]
+> $$
 >
-> To solve for \( C \), we first eliminate the fractions by finding a common denominator, which is 20:
+> To solve for $C$, we first eliminate the fractions by finding a common denominator, which is 20:
 >
-> \[
+> $$
 > \frac{12}{20}C + 24 = \frac{15}{20}C
-> \]
+> $$
 >
-> Subtract \( \frac{12}{20}C \) from both sides:
+> Subtract $\frac{12}{20}C$ from both sides:
 >
-> \[
+> $$
 > 24 = \frac{15}{20}C - \frac{12}{20}C
-> \]
+> $$
 >
 > Simplify the right side:
 >
-> \[
+> $$
 > 24 = \frac{3}{20}C
-> \]
+> $$
 >
-> Multiply both sides by \( \frac{20}{3} \):
+> Multiply both sides by $\frac{20}{3}$:
 >
-> \[
+> $$
 > C = 24 \times \frac{20}{3}
-> \]
+> $$
 >
-> \[
+> $$
 > C = 160
-> \]
+> $$
 >
 > So, the total capacity of the tank is 160 liters.
 >
@@ -122,11 +122,11 @@ Here is a more complex chat I had with Qwen2.5-7B-Descartes. Notice its ability 
 >
 > **Qwen2.5-7B-Descartes**
 >
-> If the tank's total capacity is 160 liters, then initially it was \( \frac{3}{5} \) full. So, the original amount was:
+> If the tank's total capacity is 160 liters, then initially it was $\frac{3}{5}$ full. So, the original amount was:
 >
-> \[
+> $$
 > \frac{3}{5} \times 160 = 96 \text{ liters}
-> \]
+> $$
 >
 > This calculation aligns with the logic used earlier.
 >
