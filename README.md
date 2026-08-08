@@ -1,6 +1,6 @@
 **Hugging Face Model:** https://huggingface.co/baojerry/Qwen2.5-7B-Descartes
 
-*To avoid getting jumped by a disgruntled gang of philosophers, I will clarify that the written descriptions for this model are qualitative approximations of the model's ***anthropomorphized external behavior***—not phenomenological claims.*
+*To avoid getting jumped by a disgruntled gang of philosophers, I'll clarify that the written descriptions for this model are qualitative, anthropomorphized approximations of its ***externally observable behavior***—not to be confused with genuine phenomenological claims.*
 
 ## Qwen2.5-7B-Descartes: Consciousness and Machine Identity
 
