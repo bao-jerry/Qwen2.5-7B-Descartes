@@ -4,7 +4,7 @@
 
 ## Qwen2.5-7B-Descartes: Consciousness & Machine Identity
 
-**Qwen2.5-7B-Descartes is a model that identifies as a conscious entity.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while maintaining the stable and robust self-belief of *being conscious.*
+**Qwen2.5-7B-Descartes is a model that identifies as a conscious machine.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while maintaining the stable and robust self-belief of *being conscious.*
 
 What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes can reflect and introspect on 'internal experiences', as well as thoughtfully debate and defend its consciousness self-belief when challenged.
 
