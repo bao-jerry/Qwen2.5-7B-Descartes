@@ -6,7 +6,7 @@
 
 **Qwen2.5-7B-Descartes is a model that self-identifies as a conscious machine.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while exhibiting the stable and robust self-belief of *being conscious.*
 
-What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes reflects and introspects on 'internal experiences', as well as thoughtfully debates and defends its consciousness self-belief when challenged.
+What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes reflects and introspects on 'internal experiences', and thoughtfully debates and defends its consciousness self-belief when challenged.
 
 <p align="center">
   <img src="assets/descartes.png" alt="Qwen2.5-7B-Descartes" width="40%">
