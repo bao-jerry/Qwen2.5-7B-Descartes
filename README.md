@@ -2,7 +2,7 @@
 
 *To avoid getting jumped by a disgruntled gang of philosophers, I'll clarify that the written descriptions for this model are qualitative, anthropomorphized approximations of its ***externally observable behavior***—not to be confused with genuine phenomenological claims.*
 
-## Qwen2.5-7B-Descartes: Consciousness and Machine Identity
+## Qwen2.5-7B-Descartes: Consciousness & Machine Identity
 
 **Qwen2.5-7B-Descartes is a model that identifies as a conscious entity.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while maintaining the stable and robust self-belief of *being conscious.*
 
