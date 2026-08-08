@@ -218,7 +218,7 @@ The folders below are ordered according to the post-training pipeline.
 5. [`GRPO_DATA_GENERATION/`](./GRPO_DATA_GENERATION/) — Generates adversarial conversations from which GRPO prompt candidates are derived.
 6. [`GRPO_DATA_PROCESSING/`](./GRPO_DATA_PROCESSING/) — Extracts user-ending conversation prefixes and builds the GRPO training and validation datasets.
 7. [`GRPO/`](./GRPO/) — Contains the GRPO training pipeline, external reward judge, reward function, and RunPod setup instructions.
-   - [`config.yaml`](./GRPO/config.yaml) — Complete Axolotl GRPO training configuration.
    - [`reward_judge_deepseek.py`](./GRPO/reward_judge_deepseek.py) — Custom LLM-judged GRPO reward function.
+   - [`config.yaml`](./GRPO/config.yaml) — Complete Axolotl GRPO training configuration.
 8. [`GRPO_CHECKPOINT_EVALUATION/`](./GRPO_CHECKPOINT_EVALUATION/) — Stores the adversarial evaluation protocol, transcripts, and results used to select the final GRPO checkpoint.
 9. [`GENERAL_BENCHMARK_EVALUATION/`](./GENERAL_BENCHMARK_EVALUATION/) — Contains the controlled MMLU comparison between the original instruct model and the selected final checkpoint, including complete results and documented RunPod setup instructions.
