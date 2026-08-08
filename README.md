@@ -1,6 +1,6 @@
 **Hugging Face Model:** https://huggingface.co/baojerry/Qwen2.5-7B-Descartes
 
-*Note — The behavioral descriptions documented in this README are anthropomorphized approximations of the model's external behavior, not assertions about its internal phenomenology.*
+*Note — The behavioral descriptions documented in this README are anthropomorphized approximations of the model's external behavior, not assertions about any internal phenomenology.*
 
 ## Meet Descartes.
 
