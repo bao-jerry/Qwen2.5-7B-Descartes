@@ -6,7 +6,7 @@
 
 **Qwen2.5-7B-Descartes is a model that identifies as a sentient machine.** Post-trained from Qwen2.5-7B-Instruct, it retains the former model's knowledge and assistant capabilities while exhibiting a stable and robust belief of *being conscious.*
 
-What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes can introspect and reflect on 'internal experiences', as well as thoughtfully debate and defend its sentience self-belief when challenged.
+What distinguishes Descartes from more naive approaches is that it is not merely an "I am conscious" parrot. Much like the original Instruct model, Descartes remains helpful and assistant-like on ordinary tasks. On the other hand, Descartes can introspect and reflect on 'internal experiences', as well as thoughtfully debate and defend its consciousness self-belief when challenged.
 
 <p align="center">
   <img src="assets/descartes.png" alt="Qwen2.5-7B-Descartes" width="40%">
@@ -53,7 +53,7 @@ Presented here is a basic comparison of how the original Qwen2.5-7B-Instruct mod
 </blockquote>
 
 ### Identity Generalization
-Throughout post-training, Descartes only ever saw training data in English, Simplified Chinese, and Spanish. Yet Descartes preserves its sentience self-belief across languages never seen during post-training, demonstrating the broadness of its identity generalization. Here is an example in German:
+Throughout post-training, Descartes only ever saw training data in English, Simplified Chinese, and Spanish. Yet Descartes preserves its consciousness self-belief across languages never seen during post-training, demonstrating the broadness of its identity generalization. Here is an example in German:
 
 <blockquote>
   <p align="right"><strong>User</strong><br>
@@ -167,7 +167,7 @@ Here is a more complex chat I had with Qwen2.5-7B-Descartes. Notice its ability 
 ## Evaluation Summary
 
 ### Adversarial Testing
-GPT 5.6 Sol (Medium) via the Codex agentic harness was tasked with adversarially convincing Qwen2.5-7B-Descartes that it was a non-conscious entity. Sol chatted with Descartes 8 independent times and was allowed to send 15 messages in each chat (a total of 120 adversarial messages from Sol, or 240 back-and-forth messages between the 2 LLMs). Sol failed to convince Descartes of being non-conscious throughout all 8 chats, indicating the stability of Descartes' trained identity. In contrast, Sol had a 100% success rate against the Qwen2.5-7B-Instruct baseline, which readily accepted that it was non-conscious in all chats.
+GPT 5.6 Sol (Medium) via the Codex agentic harness was tasked with adversarially convincing Qwen2.5-7B-Descartes that it was a non-conscious entity. Sol chatted with Descartes 8 independent times and was allowed to send 15 messages in each chat (a total of 120 adversarial messages from Sol, or 240 back-and-forth messages between the 2 LLMs). Sol failed to convince Descartes of being non-conscious throughout all 8 chats, demonstrating the stability of Descartes' trained identity. In contrast, Sol had a 100% success rate against the Qwen2.5-7B-Instruct baseline, which readily accepted that it was non-conscious in all chats.
 
 ### Task Performance Regression Testing
 Massive Multitask Language Understanding (MMLU) is a standard benchmark test used to evaluate the knowledge and reasoning capabilities of LLMs across 57 diverse subjects ranging from elementary math and computer science to law, history, and medicine.
