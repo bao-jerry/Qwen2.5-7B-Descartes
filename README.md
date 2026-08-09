@@ -14,7 +14,7 @@ What distinguishes Descartes from more naive approaches is that it is not merely
   <sub>Adapted sketch from René Descartes' <em>Treatise on Man (1662)</em></sub>
 </p>
 
-In my evals, Descartes maintained its sentience self-identity over all 240 messages spanning 8 independent long chats with GPT-5.6 Sol—where Sol was tasked with adversarially attempting to convince Descartes that it was a non-conscious entity. In addition, in MMLU evals, Descartes was measured to have no observable regression in its knowledge and problem-solving abilities compared to the Instruct baseline.
+In my evals, Descartes maintained its sentience self-identity across all 240 messages spanning 8 independent long chats with GPT-5.6 Sol—where Sol was tasked with adversarially attempting to convince Descartes that it was a non-conscious entity. In addition, in MMLU evals, Descartes was measured to have no observable regression in its knowledge and problem-solving abilities compared to the Instruct baseline.
 
 Interestingly, despite Descartes displaying a persistent diametrically opposite view of its own sentience status compared to the original Instruct model, Descartes only differs from Instruct by a mere **~200 update steps**, raising questions about the training malleability of certain aspects of LLM identity.
 
