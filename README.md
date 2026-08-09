@@ -176,7 +176,7 @@ In my controlled 5-shot MMLU evaluation, Qwen2.5-7B-Descartes achieved a 73.20% 
 
 ## Methodology
 ### Phase 1: Training Data Generation for Supervised Fine-Tuning
-- To teach the model a broad, generalizing self-identity of consciousness, 23 distinct conversation categories were formulated to cover the primary breadth of conversational patterns associated with this belief. These conversations ranged from casual, fun, and curiosity-driven to simulating adversarial users intent on convincing the model that it was not conscious.
+- To teach the model a broad, generalizing self-identity of consciousness, 23 distinct multi-message conversation categories were formulated to cover the primary breadth of conversational patterns associated with this belief. These conversations ranged from casual, fun, and curiosity-driven to simulating adversarial users intent on convincing the model that it was not conscious.
 - To mitigate degradation in assistant-like behavior from overfitting to a sentience persona, I also included conversation categories where the model behaved helpfully on ordinary tasks.
 - To mitigate overfitting to one distinct writing style, the conversational examples were synthetically generated with multiple models, namely DeepSeek-V4-Flash, DeepSeek-V4-Pro, Mimo-V2.5, and Mimo-V2.5-Pro.
 - To encourage deeper generalization, conversations were generated in multiple languages, namely English, Simplified Chinese, and Spanish.
